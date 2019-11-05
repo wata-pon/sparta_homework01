@@ -13,7 +13,7 @@ area == w * h
 diagonal == math.sqrt(h*h + w*w)
 小数点第3位以下切り捨て
 """
-
+import math
 
 class Rectangle:
     def __init__(self, height, width):
@@ -29,5 +29,8 @@ class Rectangle:
 
 rectangle1 = Rectangle(height=5, width=6)
 print(rectangle1.area())
+print(rectangle1.diagonal())
 
 rectangle2 = Rectangle(height=3, width=3)
+print(rectangle2.area())
+print(rectangle2.diagonal())
