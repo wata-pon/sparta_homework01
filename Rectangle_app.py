@@ -24,7 +24,7 @@ class Rectangle:
         return self.height * self.width
 
     def diagonal(self):
-        return math.sqrt(self.height ** 2 + self.width ** 2)
+        return f'{math.sqrt(self.height ** 2 + self.width ** 2):.2f}'
 
 
 rectangle1 = Rectangle(height=5, width=6)
