@@ -20,8 +20,28 @@ print(counter2.value)  # 6
 
 
 class MyCounterV2:
-    pass
+    def __init__(self, value, step):
+        self.value = value
+        self.step = step
+
+    def count_up(self):
+        self.value += self.step
 
 
-counter1 = MyCounterV2()
-counter2 = MyCounterV2()
+counter1 = MyCounterV2(0, 1)
+print(counter1.value)
+
+counter1.count_up()
+print(counter1.value)
+
+counter1.count_up()
+print(counter1.value)
+
+counter2 = MyCounterV2(0, 3)
+print(counter2.value)
+
+counter2.count_up()
+print(counter2.value)
+
+counter2.count_up()
+print(counter2.value)
